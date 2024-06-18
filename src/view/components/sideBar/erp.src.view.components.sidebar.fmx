@@ -48,7 +48,6 @@ object ComponentSideBar: TComponentSideBar
         Align = Client
         Padding.Left = 10.000000000000000000
         Padding.Top = 10.000000000000000000
-        Padding.Right = 10.000000000000000000
         Padding.Bottom = 10.000000000000000000
         Size.Width = 223.000000000000000000
         Size.Height = 72.000000000000000000
@@ -59,26 +58,24 @@ object ComponentSideBar: TComponentSideBar
           LineType = Top
           Position.X = 10.000000000000000000
           Position.Y = 10.000000000000000000
-          Size.Width = 203.000000000000000000
+          Size.Width = 213.000000000000000000
           Size.Height = 1.000000000000000000
           Size.PlatformDefault = False
+          Stroke.Color = xFFF4F3EF
         end
         object Line2: TLine
           Align = Bottom
           LineType = Bottom
           Position.X = 10.000000000000000000
           Position.Y = 61.000000000000000000
-          Size.Width = 203.000000000000000000
+          Size.Width = 213.000000000000000000
           Size.Height = 1.000000000000000000
           Size.PlatformDefault = False
+          Stroke.Color = xFFF4F3EF
         end
-        object Layout4: TLayout
+        object lytProfile: TLayout
           Align = Client
-          Padding.Left = 10.000000000000000000
-          Padding.Top = 10.000000000000000000
-          Padding.Right = 10.000000000000000000
-          Padding.Bottom = 10.000000000000000000
-          Size.Width = 203.000000000000000000
+          Size.Width = 213.000000000000000000
           Size.Height = 50.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 2

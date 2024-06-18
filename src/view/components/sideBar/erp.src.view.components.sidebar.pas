@@ -15,14 +15,16 @@ type
     Layout3: TLayout;
     Line1: TLine;
     Line2: TLine;
-    Layout4: TLayout;
+    lytProfile: TLayout;
     lytMenu: TLayout;
     Rectangle1: TRectangle;
   private
     { Private declarations }
+    procedure ConstruirMenu;
+    procedure ConstruirPerfil;
   public
     { Public declarations }
-    procedure ConstruirMenu;
+
     class function New(AOwner: TComponent): TComponentSideBar;
     function Component: TFMXObject;
   end;
@@ -31,19 +33,63 @@ implementation
 
 {$R *.fmx}
 
-uses erp.src.view.components.button;
+uses
+  System.Generics.Collections,
+  erp.src.view.components.button;
 
 { TComponentSideBar }
 
 function TComponentSideBar.Component: TFMXObject;
 begin
   ConstruirMenu;
+  ConstruirPerfil;
   Result := lytContainer;
 end;
 
 procedure TComponentSideBar.ConstruirMenu;
 begin
-  lytMenu.AddObject(TComponentButton.New(Self).Component);
+  var lListaBotoes := TObjectList<TFMXObject>.Create;
+
+  lListaBotoes.Add(
+    TComponentButton.New(Self)
+      .Nome('pessoa')
+      .SingleButton
+      .Descricao('Pessoas')
+      .Image('PngPessoa')
+      .ColorDefault($FFFFFFFF)
+      .Component);
+
+  lytMenu.AddObject(TComponentButton.New(Self)
+    .Nome('dashboard')
+    .SingleButton
+    .Descricao('Dashboard')
+    .Image('PngDashboard')
+    .ColorDefault($FFFFFFFF)
+    .Alinhamento(TAlignLayout.Top)
+    .Component);
+
+  lytMenu.AddObject(
+    TComponentButton.New(Self)
+      .Nome('cadastros')
+      .CompositeButton
+      .SubMenu(lListaBotoes)
+      .Descricao('Cadastros')
+      .Image('PngCadastros')
+      .ColorDefault($FFFFFFFF)
+      .Alinhamento(TAlignLayout.Top)
+      .Component);
+
+end;
+
+procedure TComponentSideBar.ConstruirPerfil;
+begin
+  lytProfile.AddObject(
+    TComponentButton.New(Self)
+      .Nome('perfil')
+      .Perfil('JpgEu')
+      .Descricao('Junior Oliva')
+      .ColorDefault($FFFFFFFF)
+      .Component);
 end;
 
 class function TComponentSideBar.New(AOwner: TComponent): TComponentSideBar;

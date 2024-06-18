@@ -145,19 +145,36 @@
             <Form>PageLayout</Form>
             <FormType>fmx</FormType>
         </DCCReference>
-        <DCCReference Include="src\view\components\buttom\erp.src.view.components.button.pas">
-            <Form>ComponentButton</Form>
-            <DesignClass>TFrame</DesignClass>
-        </DCCReference>
         <DCCReference Include="src\view\components\sideBar\erp.src.view.components.sidebar.pas">
             <Form>ComponentSideBar</Form>
             <FormType>fmx</FormType>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>
         <DCCReference Include="src\services\erp.src.services.utils.pas"/>
+        <DCCReference Include="src\view\components\button\erp.src.view.components.button.pas">
+            <Form>ComponentButton</Form>
+            <FormType>fmx</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
         <RcItem Include="src\assets\setabaixo.png">
             <ResourceType>RCDATA</ResourceType>
             <ResourceId>setabaixo</ResourceId>
+        </RcItem>
+        <RcItem Include="src\assets\dashboard.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngDashboard</ResourceId>
+        </RcItem>
+        <RcItem Include="src\assets\cadastros.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngCadastros</ResourceId>
+        </RcItem>
+        <RcItem Include="src\assets\eu.jpg">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>JpgEu</ResourceId>
+        </RcItem>
+        <RcItem Include="src\assets\pessoa.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngPessoa</ResourceId>
         </RcItem>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
@@ -205,6 +222,30 @@
                 <DeployFile LocalName="lib\ERP.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>ERP.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="src\assets\cadastros.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="src\assets\dashboard.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="src\assets\eu.jpg" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="src\assets\pessoa.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
