@@ -1,0 +1,96 @@
+object ComponentSideBar: TComponentSideBar
+  Size.Width = 223.000000000000000000
+  Size.Height = 545.000000000000000000
+  Size.PlatformDefault = False
+  object lytContainer: TLayout
+    Align = Client
+    Size.Width = 223.000000000000000000
+    Size.Height = 545.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Rectangle1: TRectangle
+      Align = Contents
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF181616
+          Offset = 0.068322978913784030
+        end
+        item
+          Color = xFFFBFBFB
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 1.000000000000000000
+      Fill.Gradient.StopPosition.Y = 0.000000017114270889
+      Size.Width = 223.000000000000000000
+      Size.Height = 545.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Layout1: TLayout
+      Align = Top
+      Size.Width = 223.000000000000000000
+      Size.Height = 113.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Layout2: TLayout
+        Align = Top
+        Padding.Left = 20.000000000000000000
+        Padding.Top = 10.000000000000000000
+        Padding.Right = 20.000000000000000000
+        Padding.Bottom = 10.000000000000000000
+        Size.Width = 223.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+      object Layout3: TLayout
+        Align = Client
+        Padding.Left = 10.000000000000000000
+        Padding.Top = 10.000000000000000000
+        Padding.Right = 10.000000000000000000
+        Padding.Bottom = 10.000000000000000000
+        Size.Width = 223.000000000000000000
+        Size.Height = 72.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Line1: TLine
+          Align = Top
+          LineType = Top
+          Position.X = 10.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 203.000000000000000000
+          Size.Height = 1.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Line2: TLine
+          Align = Bottom
+          LineType = Bottom
+          Position.X = 10.000000000000000000
+          Position.Y = 61.000000000000000000
+          Size.Width = 203.000000000000000000
+          Size.Height = 1.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object Layout4: TLayout
+          Align = Client
+          Padding.Left = 10.000000000000000000
+          Padding.Top = 10.000000000000000000
+          Padding.Right = 10.000000000000000000
+          Padding.Bottom = 10.000000000000000000
+          Size.Width = 203.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+        end
+      end
+    end
+    object lytMenu: TLayout
+      Align = Client
+      Size.Width = 223.000000000000000000
+      Size.Height = 432.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+  end
+end
