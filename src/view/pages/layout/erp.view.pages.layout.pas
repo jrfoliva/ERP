@@ -31,13 +31,17 @@ implementation
 
 {$R *.fmx}
 
-uses erp.src.view.components.sidebar;
+uses
+  Router4D,
+  erp.src.view.components.sidebar,
+  erp.view.pages.home;
 
 { TPageLayout }
 
 function TPageLayout.Render: TFMXObject;
 begin
   RenderSideBar;
+  TRouter4D.Render<TPageHome>.SetElement(lytBody, lytBody);
   Result := lytContainer;
 end;
 

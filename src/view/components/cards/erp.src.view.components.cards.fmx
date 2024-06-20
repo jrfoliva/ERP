@@ -1,0 +1,169 @@
+object ComponentCard: TComponentCard
+  Size.Width = 290.000000000000000000
+  Size.Height = 134.000000000000000000
+  Size.PlatformDefault = False
+  object lytContainer: TLayout
+    Align = Client
+    Padding.Left = 10.000000000000000000
+    Padding.Right = 10.000000000000000000
+    Size.Width = 290.000000000000000000
+    Size.Height = 134.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Rectangle1: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Padding.Left = 10.000000000000000000
+      Padding.Top = 10.000000000000000000
+      Padding.Right = 10.000000000000000000
+      Padding.Bottom = 10.000000000000000000
+      Size.Width = 270.000000000000000000
+      Size.Height = 134.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 10.000000000000000000
+      YRadius = 10.000000000000000000
+      object lytTitulo: TLayout
+        Align = Top
+        Padding.Left = 10.000000000000000000
+        Padding.Top = 10.000000000000000000
+        Padding.Bottom = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 250.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Layout3: TLayout
+          Align = Client
+          Size.Width = 240.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Layout4: TLayout
+            Align = Left
+            Size.Width = 42.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object ImageTitulo: TImage
+              MultiResBitmap = <
+                item
+                end>
+              Align = Client
+              Size.Width = 42.000000000000000000
+              Size.Height = 40.000000000000000000
+              Size.PlatformDefault = False
+            end
+          end
+          object Layout5: TLayout
+            Align = Client
+            Size.Width = 198.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object lblTitulo: TLabel
+              Align = Top
+              StyledSettings = [Family, Style]
+              Size.Width = 198.000000000000000000
+              Size.Height = 20.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 15.000000000000000000
+              TextSettings.FontColor = xFFA9A9BC
+              TextSettings.HorzAlign = Trailing
+              Text = 'lblTitulo'
+              TabOrder = 0
+            end
+            object lblSubTitulo: TLabel
+              Align = Client
+              StyledSettings = [Family, Style, FontColor]
+              Size.Width = 198.000000000000000000
+              Size.Height = 20.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 22.000000000000000000
+              TextSettings.HorzAlign = Trailing
+              Text = 'lblSubTitulo'
+              TabOrder = 1
+            end
+          end
+        end
+      end
+      object lytRodape: TLayout
+        Align = Client
+        Padding.Top = 5.000000000000000000
+        Size.Width = 250.000000000000000000
+        Size.Height = 54.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Layout2: TLayout
+          Align = Client
+          Padding.Left = 10.000000000000000000
+          Padding.Top = 10.000000000000000000
+          Padding.Bottom = 5.000000000000000000
+          Size.Width = 250.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Layout1: TLayout
+            Align = Client
+            Size.Width = 240.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object Layout6: TLayout
+              Align = Left
+              Size.Width = 25.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              object ImageRodape: TImage
+                MultiResBitmap = <
+                  item
+                  end>
+                Align = Client
+                Size.Width = 25.000000000000000000
+                Size.Height = 33.000000000000000000
+                Size.PlatformDefault = False
+              end
+            end
+            object Layout7: TLayout
+              Align = Client
+              Size.Width = 215.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              object NormalBlendEffect1: TNormalBlendEffect
+              end
+              object lblDescricaoRodape: TLabel
+                Align = Client
+                StyledSettings = [Family, Size, Style]
+                Margins.Left = 10.000000000000000000
+                Size.Width = 205.000000000000000000
+                Size.Height = 33.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'lblDescricaoRodape'
+                TabOrder = 0
+              end
+            end
+          end
+        end
+        object Line1: TLine
+          Align = Top
+          LineType = Top
+          Position.Y = 5.000000000000000000
+          Size.Width = 250.000000000000000000
+          Size.Height = 1.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claGray
+        end
+      end
+      object ShadowEffect1: TShadowEffect
+        Distance = 3.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.300000011920929000
+        Opacity = 0.300000011920929000
+        ShadowColor = claBlack
+      end
+    end
+  end
+end

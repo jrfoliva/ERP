@@ -156,6 +156,11 @@
             <FormType>fmx</FormType>
             <DesignClass>TFrame</DesignClass>
         </DCCReference>
+        <DCCReference Include="src\view\components\cards\erp.src.view.components.cards.pas">
+            <Form>ComponentCard</Form>
+            <FormType>fmx</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
         <RcItem Include="src\assets\setabaixo.png">
             <ResourceType>RCDATA</ResourceType>
             <ResourceId>setabaixo</ResourceId>
@@ -175,6 +180,14 @@
         <RcItem Include="src\assets\pessoa.png">
             <ResourceType>RCDATA</ResourceType>
             <ResourceId>PngPessoa</ResourceId>
+        </RcItem>
+        <RcItem Include="src\assets\globo.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngGlobo</ResourceId>
+        </RcItem>
+        <RcItem Include="src\assets\refresh.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>PngRefresh</ResourceId>
         </RcItem>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
@@ -243,7 +256,19 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="src\assets\globo.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="src\assets\pessoa.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="src\assets\refresh.png" Configuration="Debug" Class="ProjectFile">
                     <Platform Name="Win32">
                         <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>

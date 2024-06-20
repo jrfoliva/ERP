@@ -11,7 +11,8 @@ uses
   erp.view.pages.layout in 'src\view\pages\layout\erp.view.pages.layout.pas' {PageLayout},
   erp.src.view.components.sidebar in 'src\view\components\sideBar\erp.src.view.components.sidebar.pas' {ComponentSideBar: TFrame},
   erp.src.services.utils in 'src\services\erp.src.services.utils.pas',
-  erp.src.view.components.button in 'src\view\components\button\erp.src.view.components.button.pas' {ComponentButton: TFrame};
+  erp.src.view.components.button in 'src\view\components\button\erp.src.view.components.button.pas' {ComponentButton: TFrame},
+  erp.src.view.components.cards in 'src\view\components\cards\erp.src.view.components.cards.pas' {ComponentCard: TFrame};
 
 {$R *.res}
 
